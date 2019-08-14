@@ -2,6 +2,7 @@
 	$rss = Mage::getModel('orange_rss/rss');
 	$posts = $rss->data();
 ?>
+<?php if($rss->isActive()): ?>
 <div class="block">
 	<div class="block-title">
 		<strong><span><?php echo $rss->getTitle() ?></span></strong>
@@ -19,10 +20,12 @@
 							<?php endif ?>
 						</div>
 					<?php endif ?>
-					<?php if($_date = $post['dateModified']): ?>
-						<div class="date">
-							<?php echo date('d.m.Y', $_date->getTimestamp()) ?>
-						</div>
+					<?php if($rss->showDate()): ?>
+						<?php if($_date = $post['dateModified']): ?>
+							<div class="date">
+								<?php echo date('d.m.Y', $_date->getTimestamp()) ?>
+							</div>
+						<?php endif ?>
 					<?php endif ?>
 					<div class="content">
 						<?php echo strip_tags($post['description']) ?>
@@ -34,3 +37,4 @@
 		<?php endif ?>
 	</div>
 </div>
+<?php endif ?>

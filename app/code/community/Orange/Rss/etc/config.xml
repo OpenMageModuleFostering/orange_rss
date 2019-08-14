@@ -46,6 +46,7 @@
 				<enable>1</enable>
 				<title>Rss</title>
 				<rss_link>http://</rss_link>
+				<show_date>1</show_date>
 				<showposts>3</showposts>
 			</settings>
 		</orange_rss>

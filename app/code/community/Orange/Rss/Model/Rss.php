@@ -11,6 +11,16 @@ class Orange_Rss_Model_Rss extends Mage_Core_Model_Abstract
 		return $this->getStoreData('title');
 	}
 	
+	public function isActive()
+	{
+		return $this->getStoreData('enable');
+	}
+	
+	public function showDate()
+	{
+		return $this->getStoreData('show_date');
+	}
+	
 	public function data()
 	{
 		$rssLink = $this->getStoreData('rss_link');
