@@ -27,9 +27,11 @@
 							</div>
 						<?php endif ?>
 					<?php endif ?>
+					<?php if($rss->showContent()): ?>
 					<div class="content">
 						<?php echo strip_tags($post['description']) ?>
 					</div>
+					<?php endif ?>
 				</div>
 			<?php endforeach ?>
 		<?php else: ?>

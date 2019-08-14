@@ -2,15 +2,15 @@
 <config>
 	<modules>
 		<Orange_Rss>
-			<version>1.0.0</version>
+			<version>0.1.2</version>
 		</Orange_Rss>
 	</modules>
 	<frontend>
 		<layout>
 			<updates>
-				<orange>
+				<orange_rss>
 					<file>orange_rss.xml</file>
-				</orange>
+				</orange_rss>
 			</updates>
 		</layout>
 	</frontend>
@@ -48,6 +48,7 @@
 				<rss_link>http://</rss_link>
 				<show_date>1</show_date>
 				<showposts>3</showposts>
+				<show_content>1</show_content>
 			</settings>
 		</orange_rss>
 	</default>

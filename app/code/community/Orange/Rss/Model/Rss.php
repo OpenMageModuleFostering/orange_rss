@@ -1,26 +1,30 @@
 <?php
+/*
+author: SB
+support: mage.ext@gmail.com
+*/
 class Orange_Rss_Model_Rss extends Mage_Core_Model_Abstract
 {
 	function getStoreData($item)
 	{
 		return Mage::getStoreConfig('orange_rss/settings/' . $item);
 	}
-	
 	public function getTitle()
 	{
 		return $this->getStoreData('title');
 	}
-	
 	public function isActive()
 	{
 		return $this->getStoreData('enable');
 	}
-	
 	public function showDate()
 	{
 		return $this->getStoreData('show_date');
 	}
-	
+	public function showContent()
+	{
+		return $this->getStoreData('show_content');
+	}
 	public function data()
 	{
 		$rssLink = $this->getStoreData('rss_link');

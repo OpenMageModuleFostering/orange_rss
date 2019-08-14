@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>orange_rss</name>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <stability>stable</stability>
     <license>Open Software License</license>
     <channel>community</channel>
@@ -10,9 +10,9 @@
     <description>Extension for importing and merging RSS and Atom feeds to show on your Magento site.</description>
     <notes>Stable release</notes>
     <authors><author><name>Mage</name><user>Dev</user><email>mage.ext@gmail.com</email></author></authors>
-    <date>2013-01-02</date>
-    <time>16:38:16</time>
-    <contents><target name="magecommunity"><dir name="Orange"><dir name="Rss"><dir name="Model"><file name="Rss.php" hash="3aa7691a28b57dae0dcb44d6a3821846"/></dir><dir name="etc"><file name="config.xml" hash="cfcdcdacf7fa7fab2b39ecbe62c097c0"/><file name="system.xml" hash="73bbb95c41d7d24920c091cea4d4b675"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="orange"><file name="rss.phtml" hash="211231faec3a002c243884417de38375"/></dir></dir><dir name="layout"><file name="orange_rss.xml" hash="a2e871dba31dc908deeec6470d2c79e6"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mage_OrangeRss.xml" hash="4791b52dd59b9e18662f436ae2eebc17"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><file name="orange_rss.css" hash="5fb7273a9a83cbea346d7a4ef7f21349"/></dir></dir></dir></dir></target></contents>
+    <date>2013-01-15</date>
+    <time>18:31:15</time>
+    <contents><target name="magecommunity"><dir name="Orange"><dir name="Rss"><dir name="Model"><file name="Rss.php" hash="7b9341c83881770d6c4e2c5d07431ed9"/></dir><dir name="etc"><file name="config.xml" hash="db6706b8fa50d7718961d6ad699e7fff"/><file name="system.xml" hash="b7f4e3fa7853fedbd851291acae6a0b9"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="orange"><file name="rss.phtml" hash="d8f55bfafa9154c8203c01cb6eb113b8"/></dir></dir><dir name="layout"><file name="orange_rss.xml" hash="a2e871dba31dc908deeec6470d2c79e6"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Orange_Rss.xml" hash="4791b52dd59b9e18662f436ae2eebc17"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><file name="orange_rss.css" hash="5fb7273a9a83cbea346d7a4ef7f21349"/></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
