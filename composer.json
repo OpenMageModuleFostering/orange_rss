@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/orange_rss",
+    "type": "magento-module",
+    "license": "Open-Software-License",
+    "homepage": "",
+    "description": "Extension for importing and merging RSS and Atom feeds to show on your Magento site.",
+    "authors": [
+    {
+        "name": "Mage",
+        "email": "mage.ext@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
