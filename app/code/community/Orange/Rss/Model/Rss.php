@@ -28,9 +28,8 @@ class Orange_Rss_Model_Rss extends Mage_Core_Model_Abstract
 	public function data()
 	{
 		$rssLink = $this->getStoreData('rss_link');
-		if(file_get_contents($rssLink))
-		{
-			$feed = Zend_Feed_Reader::import('http://rss.cnn.com/rss/edition_world.rss');
+		if(file_get_contents($rssLink)) {
+			$feed = Zend_Feed_Reader::import($rssLink);
 			
 			$data = array(
 				'title'        => $feed->getTitle(),
@@ -42,8 +41,7 @@ class Orange_Rss_Model_Rss extends Mage_Core_Model_Abstract
 			);
 	 
 			$i = 0;
-			foreach ($feed as $entry)
-			{
+			foreach ($feed as $entry) {
 				++$i;
 				$edata = array(
 					'title'        => $entry->getTitle(),
@@ -58,9 +56,7 @@ class Orange_Rss_Model_Rss extends Mage_Core_Model_Abstract
 					break;
 			}
 			return $data;
-		}
-		else
-		{
+		} else {
 			return false;
 		}
 	}
